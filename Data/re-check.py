@@ -29,7 +29,7 @@ def read_passwords_list(filename):
 
 if __name__ == "__main__":
     username = input("Enter the username: ")
-    password_file = input("Enter the filename containing passwords (e.g., passwords.txt): ")
+    password_file = input("Enter the filename containing password : ")
 
     passwords = read_passwords_list(password_file)
 
