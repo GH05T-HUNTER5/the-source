@@ -4,21 +4,20 @@ if [[ -d /usr/bin ]]; then
 		echo "Root must"
 		exit
 	fi
-	git clone https://github.com/Tony-Linux/color
-	mv color/color /usr/bin/color
-	chmod +x /usr/bin/color
-	rm -rf color
-	rm color.sh
-	clear
+	git clone https://github.com/Tony-Linux/color >/dev/null 2>&1
+	mv color/color /usr/bin/color >/dev/null 2>&1
+	chmod +x /usr/bin/color >/dev/null 2>&1
+	rm -rf color >/dev/null 2>&1
+	rm color.sh >/dev/null 2>&1
 	color
 	exit
 elif [[ -d /data/data/com.termux/files/usr/bin ]]; then
-	git clone https://github.com/Tony-Linux/color
-	mv mv color/color /data/data/com.termux/files/usr/bin/color
-	chmod +x /data/data/com.termux/files/usr/bin/color
-	rm -rf color
-	rm color.sh
-	clear
+	git clone https://github.com/Tony-Linux/color >/dev/null 2>&1
+	mv color/color /data/data/com.termux/files/usr/bin/color >/dev/null 2>&1
+	chmod +x /data/data/com.termux/files/usr/bin/color >/dev/null 2>&1
+	rm -rf color >/dev/null 2>&1
+	rm color.sh >/dev/null 2>&1
 	color
 	exit
 fi
+
