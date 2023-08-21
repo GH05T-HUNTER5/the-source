@@ -8,6 +8,7 @@ if [[ -d /usr/bin ]]; then
 	mv color/color /usr/bin/color
 	chmod +x /usr/bin/color
 	rm -rf color
+	rm color.sh
 	clear
 	color
 	exit
@@ -16,6 +17,7 @@ elif [[ -d /data/data/com.termux/files/usr/bin ]]; then
 	mv mv color/color /data/data/com.termux/files/usr/bin/color
 	chmod +x /data/data/com.termux/files/usr/bin/color
 	rm -rf color
+	rm color.sh
 	clear
 	color
 	exit
