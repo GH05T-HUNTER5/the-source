@@ -2,7 +2,7 @@
 
 if [[ -d /usr/bin ]]; then
 	if [ $(id -u) -ne 0 ]; then
-		echo "Root Must"
+		echo "Root access is required for executing the root script."
 		exit
 	fi
 	git clone https://github.com/Tony-Linux/color >/dev/null 2>&1
